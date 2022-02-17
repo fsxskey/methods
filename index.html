@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)https://moonclient.xyz/ -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <style type="text/css">
+        .selly-close {
+            z-index: 9999999999;
+            height: 40px;
+            position: fixed;
+            right: 30px;
+            top: 15px;
+            width: 40px;
+            margin: 0;
+            border-radius: 50%;
+            cursor: pointer
+        }
+        
+        .selly-close:hover {
+            background: rgba(0, 0, 0, .4)
+        }
+        
+        .selly-close:after,
+        .selly-close:before {
+            background: #fff;
+            content: '';
+            display: block;
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            height: 70%;
+            width: 2px
+        }
+        
+        .selly-close:before {
+            -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+            -webkit-transform-origin: center center;
+            -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+            transform: translateX(-50%) translateY(-50%) rotate(45deg);
+            -ms-transform-origin: center center;
+            transform-origin: center center
+        }
+        
+        .selly-close:after {
+            -webkit-transform-origin: center center;
+            -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+            -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+            transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+            -ms-transform-origin: center center;
+            transform-origin: center center
+        }
+        
+        .selly-frame {
+            border: none;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .selly-container {
+            -webkit-overflow-scrolling: touch;
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%
+        }
+        
+        .selly-wrapper {
+            overflow-x: hidden;
+            position: fixed;
+            z-index: 999999;
+            background: rgba(0, 0, 0, .63);
+            right: 0;
+            bottom: 0;
+            left: 0;
+            top: 0;
+            -webkit-overflow-scrolling: touch;
+            overflow-y: scroll
+        }
+        
+        .selly-loading:after,
+        .selly-loading:before {
+            position: absolute;
+            content: '';
+            width: 1.28571em;
+            height: 1.28571em;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0
+        }
+        
+        .selly-loading {
+            padding: 0 21px
+        }
+        
+        .selly-loading:before {
+            border-radius: 500rem;
+            border: .2em solid rgba(0, 0, 0, .15)
+        }
+        
+        .selly-loading:after {
+            -webkit-animation: selly-spin .6s linear;
+            animation: selly-spin .6s linear;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            border-radius: 500rem;
+            border-color: #FFF transparent transparent;
+            border-style: solid;
+            border-width: .2em;
+            -webkit-box-shadow: 0 0 0 1px transparent;
+            box-shadow: 0 0 0 1px transparent
+        }
+        
+        .selly-loading__large:after,
+        .selly-loading__large:before {
+            width: 2.5em;
+            height: 2.5em;
+            border-width: .3em
+        }
+        
+        .selly-loading--fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0
+        }
+        
+        @-webkit-keyframes selly-spin {
+            from {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+            to {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
+            }
+        }
+        
+        @keyframes selly-spin {
+            from {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+            to {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
+            }
+        }
+        
+        .loading-text-container {
+            margin-top: 80px;
+            max-width: 300px;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
+            color: #fff
+        }
+        
+        .loading-link {
+            font-weight: 700;
+            text-decoration: underline;
+            padding-top: 10px;
+            color: #fff
+        }
+        
+        .selly-error {
+            margin-top: 0px;
+        }
+        
+        .selly-error-icon {
+            height: 80px;
+            margin-bottom: 20px;
+        }
+    </style>
+
+</head>
+
+<body class="bg-slate-800" data-new-gr-c-s-check-loaded="14.1050.0" data-gr-ext-installed=""><button onclick="if (!window.__cfRLUnblockHandlers) return false; backToTop()" id="topButton" title="Go to top" style="display: block; background-color: transparent; color: transparent; opacity: 0;"><span></span></button>
+    <link href="output.css" rel="stylesheet">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Fsxskey Methods</title>
+    <style>
+        @media screen and (max-width: 825px) {
+            #hideOnSmallScreen {
+                visibility: hidden;
+                display: none;
+                overflow: hidden;
+            }
+        }
+        
+        #hideCompletely {
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.3s ease-in-out;
+        }
+        /* Scroll to top button hover effect */
+        
+        #topButton:hover {
+            background-color: #555;
+        }
+        /* Top button style */
+        
+        #topButton {
+            display: block;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-family: productSans, serif;
+            font-size: 18px;
+            background-color: transparent;
+            opacity: 0;
+            outline: none;
+            color: transparent;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            border-radius: 3px;
+            text-align: center;
+            border: 0;
+        }
+        /* Arrow for the inside of the top button */
+        
+        #topButton span {
+            position: absolute;
+            top: 81.5%;
+            left: 55.5%;
+            content: '';
+            width: 12px;
+            height: 12px;
+            margin: -12px 0 0 -8px;
+            border-left: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            -webkit-transform: rotate(-225deg);
+            transform: rotate(-225deg);
+            box-sizing: border-box;
+        }
+        
+        #displayHide {
+            visibility: hidden;
+            display: none;
+            overflow: hidden;
+        }
+    </style>
+
+    <nav class="bg-slate-900 shadow-heavy">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="relative flex items-center justify-between h-16">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" id="mobile-menu-button">
+<span class="sr-only">Open main menu</span>
+<svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+</svg>
+<svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+</svg>
+</button>
+                    <div class="flex flex-row pr-2 sm:ml-6 sm:pr-0">
+                        <button type="button" data-selly-product="c7e7fac4" class="hidden sm:block ml-2 bg-indigo-500 rounded-md text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+<span class="flex items-center justify-center">
+<svg xmlns="http://www.w3.org/2000/svg" class="ml-3 mr-3 mt-1 h-6 w-6" viewBox="0 0 20 20" fill="white">
+<path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+</svg>
+<a class="text-white font-semibold px-0 mr-3 py-2 text-semibold" aria-current="page">Purchase</a>
+</span>
+</button>
+                        <button type="button" onclick="if (!window.__cfRLUnblockHandlers) return false;" class="hidden sm:block ml-2 bg-indigo-500 rounded-md text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+<span class="flex items-center justify-center">
+<a class="text-white font-semibold px-3 py-2 text-semibold" aria-current="page" target="_blank">Discord</a>
+</span>
+</button>
+                        <button type="button" onclick="if (!window.__cfRLUnblockHandlers) return false;" class="hidden sm:block ml-2 bg-indigo-500 rounded-md text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white flex items-center justify-center">
+<span class="flex items-center justify-center">
+<svg xmlns="http://www.w3.org/2000/svg" class="ml-3 mr-3 mt-1 h-6 w-6" viewBox="0 0 20 20" fill="white">
+<path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+</svg>
+<a class="text-white font-semibold px-0 mr-3 py-2 text-semibold" aria-current="page" target="_blank">Scripting</a>
+</span>
+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sm:hidden flex flex-col mobilenavcontrol" id="hideCompletely">
+                <button type="button" class="ml-2 mr-2 mb-1 bg-indigo-500 rounded-md text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white flex items-center justify-center">
+<svg xmlns="http://www.w3.org/2000/svg" class="ml-3 mr-3 mt-1 h-6 w-6" viewBox="0 0 20 20" fill="white">
+<path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+</svg>
+<a href="https://discord.gg/S6b9uCc46e" class="text-white font-semibold px-0 mr-3 py-2 text-semibold" aria-current="page">Buy Fsxskey</a>
+</button>
+                <button type="button" class="ml-2 mr-2 mb-1 bg-indigo-500 rounded-md text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white flex items-center justify-center">
+<img class="ml-3" src="./Moon Client_files/discord.svg" width="24">
+<a href="https://discord.gg/S6b9uCc46e" class="text-white font-semibold px-3 py-2 text-semibold" aria-current="page">Discord</a>
+</button>
+                <button type="button" class="ml-2 mr-2 mb-1 bg-indigo-500 rounded-md text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white flex items-center justify-center">
+<svg xmlns="http://www.w3.org/2000/svg" class="ml-3 mr-3 mt-1 h-6 w-6" viewBox="0 0 20 20" fill="white">
+<path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+</svg>
+</button>
+            </div>
+    </nav>
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-16 mt-16 flex flex-col items-center justify-center">
+                <h2 class="text-base max-w-7xl text-4xl text-blue-500 font-bold">Fsxskey Methods</h2>
+                <h2 class="text-base max-w-7xl mt-2 text-4xl text-white font-extrabold" style="text-align: center">100 scripts for beaming to token logging and mass dms</h2>
+                </h2>
+                <h2 class="text-base mt-6 max-w-7xl text-md text-gray-500 font-medium" style="text-align: center">A service which fits all your needs, feature wise and our customer service.<br>Easy usability while staying customizable with a large community.<br>Trusted since 2021</h2>
+                <div class="flex">
+                    <button type="button" onclick="if (!window.__cfRLUnblockHandlers) return false; scrollToLearnMore()" class="mt-12 bg-indigo-500 py-2 rounded-md mr-3 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white flex items-center justify-center">
+<svg xmlns="http://www.w3.org/2000/svg" class="ml-3 mr-3 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path>
+</svg>
+<a class="text-white font-semibold mr-3 text-semibold" aria-current="page" href="https://discord.gg/S6b9uCc46e">Learn more</a>
+                </button>
+                    <button type="button" onclick="if (!window.__cfRLUnblockHandlers) return false; scrollToPricing()" class="mt-12 bg-indigo-500 py-2 rounded-md text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white flex items-center justify-center">
+<svg xmlns="http://www.w3.org/2000/svg" class="ml-3 mr-3 h-6 w-6" viewBox="0 0 20 20" fill="white">
+<path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
+</svg>
+<a class="text-white font-semibold mr-3 text-semibold" aria-current="page" href="https://discord.gg/S6b9uCc46e">Pricing(in discord)</a>
+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-12" id="learnMoreSection">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-16">
+                <h2 class="text-base max-w-7xl text-4xl text-blue-500 font-bold" style="text-align: center">Why Fsxskey
+                </h2>
+            </div>
+            <div class="mt-16">
+                <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+                    <div class="relative shadow-heavy bg-slate-900 p-5 rounded-xl flex justify-center items-center flex-col">
+                        <div class="p-4 rounded-md bg-indigo-500 text-white mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+</svg>
+                        </div>
+                        <p class="lg:text-center text-xl font-medium text-white">Reliable</p>
+                        <dd class="mt-2 lg:text-center text-base text-gray-500">
+                            Fsxskey has always gotten quality updates since 2021, always improving the methods and scripts to the point where it is at now.
+                        </dd>
+                    </div>
+                    <div class="relative shadow-heavy bg-slate-900 p-5 rounded-xl flex justify-center items-center flex-col">
+                        <div class="p-4 rounded-md bg-indigo-500 text-white mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+</svg>
+                        </div>
+                        <p class="lg:text-center text-xl font-medium text-white">Free</p>
+                        <dd class="mt-2 lg:text-center text-base text-gray-500">
+                            Every feature is in the discord, there are over 15 free modules and 80+ paid modules to fit all of your needs.
+                        </dd>
+                    </div>
+                    <div class="relative shadow-heavy bg-slate-900 p-5 rounded-xl flex justify-center items-center flex-col">
+                        <div class="p-4 rounded-md bg-indigo-500 text-white mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+</svg>
+                        </div>
+                        <p class="lg:text-center text-xl font-medium text-white">Orignal</p>
+                        <dd class="mt-2 lg:text-center text-base text-gray-500">
+                            Fsxskey has a stunning amount of modules and has 21 orignal modules never seen before.
+                        </dd>
+                    </div>
+                    <div class="relative shadow-heavy bg-slate-900 p-5 rounded-xl flex justify-center items-center flex-col">
+                        <div class="p-4 rounded-md bg-indigo-500 text-white mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path>
+</svg>
+                        </div>
+                        <p class="lg:text-center text-xl font-medium text-white">Good customer support</p>
+                        <dd class="mt-2 lg:text-center text-base text-gray-500">
+                            contact any staff at any time for any of your needs.
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-16">
+                <div class="py-12" id="pricingSection">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="lg:text-center mb-16">
+                            <h2 class="text-base max-w-7xl text-4xl text-blue-500 font-bold" style="text-align: center">Pricing</h2>
+                        </div>
+                        <div class="mt-16">
+                            <dl class="space-y-10 auto-cols-max md:space-y-0 md:grid md:grid-cols-4 md:gap-x-8 md:gap-y-10">
+                                <div class="relative shadow-heavy bg-slate-900 p-8 rounded-xl flex flex-col col-start-2 col-span-2">
+                                    <p class="lg:text-left text-5xl font-extrabold text-white">
+                                        in the discord
+                                        <span class="text-gray-500 text-xl font-medium">/ lifetime</span>
+                                    </p>
+                                    <d class="mt-8 lg:text-left text-base text-gray-500">
+                                        There are no subscriptions, pay for it once and receive updates for the rest of its lifetime
+                                        <span class="text-xs text-gray-500">*</span>.
+                                        <br> Isn't that a good deal?
+                                    </d>
+                                    <d class="mt-8 lg:text-left text-base text-gray-500 flex items-center">
+                                        <span class="green">
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48" style=" fill:#000000;"><path fill="#43A047" d="M40.6 12.1L17 35.7 7.4 26.1 4.6 29 17 41.3 43.4 14.9z"></path></svg>
+</span>
+                                        <span class="text-white sm:ml-2">
+One-time purchase
+</span>
+                                    </d>
+                                    <d class="mt-4 lg:text-left text-base text-gray-500 flex items-center">
+                                        <span class="green">
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48" style=" fill:#000000;"><path fill="#43A047" d="M40.6 12.1L17 35.7 7.4 26.1 4.6 29 17 41.3 43.4 14.9z"></path></svg>
+</span>
+                                        <span class="text-white sm:ml-2">
+Receive the full product needed, no compromises
+</span>
+                                    </d>
+                                    <d class="mt-4 lg:text-left text-base text-gray-500 flex items-center">
+                                        <span class="green">
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48" style=" fill:#000000;"><path fill="#43A047" d="M40.6 12.1L17 35.7 7.4 26.1 4.6 29 17 41.3 43.4 14.9z"></path></svg>
+</span>
+                                        <span class="text-white sm:ml-2">
+Lifetime<span class="text-xs text-gray-500">*</span> updates for free
+                                        </span>
+                                    </d>
+                                    <d class="mt-4 lg:text-left text-base text-gray-500 flex items-center">
+                                        <span class="green">
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48" style=" fill:#000000;"><path fill="#43A047" d="M40.6 12.1L17 35.7 7.4 26.1 4.6 29 17 41.3 43.4 14.9z"></path></svg>
+</span>
+                                        <span class="text-white sm:ml-2">
+Lifetime<span class="text-xs text-gray-500">*</span> customer support
+                                        </span>
+                                    </d>
+                                    <d class="mt-4 lg:text-left text-base text-gray-500 text-xs flex items-center">
+                                        * Lifetime stands for the lifetime of the client.
+                                    </d>
+                                    <d class="lg:text-left text-base text-gray-500 text-sm flex items-center">
+                                        Only works on Windows 7-11 x64
+                                    </d>
+                                    <button type="button" class="mt-8 p-1 rounded-full hover:text-white flex justify-center items-center flex-col focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white bg-indigo-500 text-white font-semibold py-3 rounded text-semibold"
+                                        data-selly-product="c7e7fac4">
+<a class="text-2xl text-center" style="text-align: center" aria-current="page" href="https://discord.gg/S6b9uCc46e">Buy now
+</a>
+</button>
+                                    </button>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <nav class="bg-slate-900 shadow-heavy">
+                    <div class="relative flex flex-col items-center justify-center">
+                        <div class="mt-8 mb-4">
+                            <a href="https://discord.gg/S6b9uCc46e" target="_blank" class="text-gray-400 hover:text-white font-bold mr-2 ml-2">Discord</a>
+                        </div>
+                        <div class="mt-4 mb-4">
+                            <p class="text-gray-400">©2022 Fxskey, All Rights Reserved</p>
+                        </div>
+                    </div>
+                    <div class="sm:hidden flex flex-col mobilenavcontrol">
+                    </div>
+                </nav>
+</body>
+
+</html>
